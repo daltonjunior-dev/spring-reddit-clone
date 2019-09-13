@@ -10,12 +10,8 @@ import org.springframework.web.servlet.ModelAndView;
 public class HomeController {
 
     @GetMapping("/")
-    public ModelAndView listAllPosts() {
-        return new ModelAndView("");
-    }
+    public ModelAndView getHomePage() {
 
-    @GetMapping("/")
-    public ModelAndView listAllCommunities() {
-        return new ModelAndView("");
+        return new ModelAndView("home");
     }
 }
